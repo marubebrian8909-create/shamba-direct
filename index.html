@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shamba Direct - Farm produce, straight from the farmer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="bar">
+  <a class="logo" href="#home">Shamba Direct</a>
+  <button class="burger" id="burger" aria-label="Menu">&#9776;</button>
+  <nav id="nav">
+    <a href="#home">Home</a>
+    <a href="#catalogue">Produce</a>
+    <a href="#cart">Cart <span id="cartCount" class="badge">0</span></a>
+    <a href="login.html" id="authLink" class="btn small">Log in</a>
+  </nav>
+</header>
+
+<main>
+  <!-- HOME -->
+  <section id="home" class="page">
+    <div class="hero">
+      <h1>Fresh from the farm to your table.</h1>
+      <p>Buy directly from verified smallholder farmers. No middlemen, fair prices.</p>
+      <a href="#catalogue" class="btn">Browse produce</a>
+    </div>
+    <div class="grid three">
+      <div class="card"><h3>For households</h3><p>Order vegetables and fruit weekly.</p></div>
+      <div class="card"><h3>For hotels &amp; schools</h3><p>Bulk orders with delivery tracking.</p></div>
+      <div class="card"><h3>For farmers</h3><p>List your harvest and reach buyers.</p></div>
+    </div>
+  </section>
+
+  <!-- CATALOGUE -->
+  <section id="catalogue" class="page">
+    <h2>Produce catalogue</h2>
+    <div class="filters">
+      <input type="search" id="search" placeholder="Search produce...">
+      <select id="category"><option value="">All categories</option></select>
+    </div>
+    <div id="produceGrid" class="grid four"></div>
+  </section>
+
+  <!-- PRODUCT DETAIL -->
+  <section id="detail" class="page">
+    <a href="#catalogue">&larr; Back to produce</a>
+    <div id="detailBox" class="card detail"></div>
+  </section>
+
+  <!-- CART -->
+  <section id="cart" class="page">
+    <h2>Your cart</h2>
+    <div id="cartBox" class="card"></div>
+  </section>
+</main>
+
+<footer class="foot"><a href="portal.html">Staff portal (farmers &amp; admins)</a><br>&copy; 2026 Shamba Direct &middot; Contact: hello@shambadirect.co.ke</footer>
+<div id="toast" class="toast" role="status"></div>
+<script src="app.js"></script>
+</body>
+</html>
